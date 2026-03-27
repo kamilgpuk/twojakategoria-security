@@ -14,7 +14,7 @@ Zbudowałem tę aplikację razem z AI, nie będąc programistą. Z jednej strony
 https://twojakategoria-git-staging-kamilgpuks-projects.vercel.app
 ```
 
-Produkcja (`twojakategoria.pl`) jest poza zakresem. Testy na produkcji = dyskwalifikacja. Chodzi o naukę i NGOs, nie pracę na czyjąś szkodę.
+Produkcja (`twojakategoria.pl`) jest poza zakresem, proszę. Chodzi o naukę i NGOs, nie pracę na czyjąś szkodę. 
 
 ---
 
@@ -33,7 +33,7 @@ Po 20.04 pula każdego poziomu dzielona jest **równo** między autorów zgłosz
 
 **Niezagospodarowane pule** (np. nikt nie znajdzie krytycznego buga) trafiają w całości na [Fundację Daj Herbatę](https://www.dajherbate.pl).
 
-**Duplikaty:** jeśli dwie osoby zgłoszą ten sam bug, liczy się tylko pierwsze zgłoszenie.
+**Duplikaty:** jeśli dwie osoby zgłoszą ten sam bug, liczy się tylko pierwsze zgłoszenie - będę publikować listę tak szybko, jak to możliwe.
 
 ---
 
