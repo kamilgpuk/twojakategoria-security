@@ -1,8 +1,8 @@
 # Vibe Coding → Bug Bounty → Kasa dla NGO
 
-> Program Bug Bounty dla [twojakategoria.pl](https://www.twojakategoria.pl) — polskiego portalu edukacyjnego zbudowanego w całości przez AI (vibe coding). Pula nagród: **2 000 zł przekazane na NGO**.
+> Program Bug Bounty dla [twojakategoria.pl](https://www.twojakategoria.pl) — portalu edukacyjnego który zbudowałem w całości przez AI (vibe coding). Pula nagród: **2 000 zł przekazane na NGO**.
 
-Zbudowałem tę aplikację razem z AI. Obsługuje realne dane użytkowników i płatności. Teraz płacę Ci za jej złamanie — a nagrodą jest wskazanie organizacji non-profit, na którą trafi Twoja część puli.
+Zbudowałem tę aplikację razem z AI, nie będąc programistą. Z jednej strony bardzo uskrzydlające doświadczenie - z drugiej, mając za sobą 10 lat w IT wiem, że nic nie wiem. Apka obsługuje realne dane użytkowników, ma podpięte płatności - jestem ciekaw, jakig bugów i podatności nie znalazły dotychczas agenty. W ramach ciekawości, oraz w duchu *giving back*, stawiam kasę za jej złamanie — a nagrodą jest wskazanie organizacji non-profit, na którą trafi Twoja część puli.
 
 ---
 
@@ -13,13 +13,13 @@ Zbudowałem tę aplikację razem z AI. Obsługuje realne dane użytkowników i p
 https://twojakategoria-git-staging-kamilgpuks-projects.vercel.app
 ```
 
-Produkcja (`twojakategoria.pl`) jest poza zakresem. Testy na produkcji = dyskwalifikacja.
+Produkcja (`twojakategoria.pl`) jest poza zakresem. Testy na produkcji = dyskwalifikacja. Chodzi o naukę i NGOs, nie pracę na czyjąś szkodę.
 
 ---
 
 ## Pule nagród
 
-Po zakończeniu programu pula każdego poziomu dzielona jest **równo** między wszystkich zakwalifikowanych badaczy w danym tierze. Każdy zakwalifikowany badacz **wskazuje NGO**, na które trafi jego część — organizator przekazuje środki bezpośrednio.
+Po 20.04 pula każdego poziomu dzielona jest **równo** między autorów zgłoszeń w danym tierze, do limitu unikatowych zgłoszeń. Każdy zakwalifikowany autor **wskazuje NGO**, na które trafi jego część — a ja przekazuje środki bezpośrednio i publikuję moim LI.
 
 | Poziom | Pula | Maks. osób | Zasada |
 |--------|------|------------|--------|
@@ -43,6 +43,7 @@ Po zakończeniu programu pula każdego poziomu dzielona jest **równo** między 
 - Kreator dokumentów (6 kroków) — pola formularza, walidacja, sesja
 - Strona podglądu dokumentu
 - Strona sukcesu płatności i pobierania PDF
+- Błędy w danych katalogowych (zły adres WCR, etc)
 
 ### Endpointy API
 | Endpoint | Co testować |
@@ -74,18 +75,10 @@ Po zakończeniu programu pula każdego poziomu dzielona jest **równo** między 
 - Meta Pixel / CAPI
 
 ### Wykluczone techniki
-- **DoS / DDoS** — jakiekolwiek próby przeciążenia serwisu
+- **DoS / DDoS** — jakiekolwiek próby przeciążenia serwisu; pls don't
 - **Automatyczne skany bez writeupa** — dumpy z Burpa/Nikto bez analizy = odrzucenie
 - **Social engineering, phishing, vishing**
-- **Ataki wymagające dostępu fizycznego** do urządzenia ofiary
-- **Self-XSS** — atak wymagający własnych działań w przeglądarce
-- **Testy na środowisku produkcyjnym** (`twojakategoria.pl`)
-
-### Niski priorytet (mogą nie kwalifikować się do nagrody)
-- Brakujące nagłówki HTTP bez możliwego wektora ataku
-- Clickjacking na stronach bez wrażliwych akcji
-- Konfiguracja SSL/TLS (zarządza Cloudflare)
-- Problemy wyłącznie w przeglądarkach starszych niż 2 lata
+- **Testy na środowisku produkcyjnym** (`twojakategoria.pl`) - be a nice human, daj mi czas naprawić błędy po znalezieniu ich na stage.
 
 ---
 
@@ -102,8 +95,6 @@ Używamy **GitHub Private Vulnerability Reporting** — Twoje zgłoszenie jest w
 4. **Dowód** — screenshot, nagranie, PoC (proof of concept)
 5. **Proponowany poziom** — Krytyczny / Wysoki / Średni / Niski
 
-Writeup bez PoC = zgłoszenie nierozpatrzone.
-
 ---
 
 ## Kryteria poziomów
@@ -115,33 +106,28 @@ Writeup bez PoC = zgłoszenie nierozpatrzone.
 | 🟡 **Średni** | Bypass rate limitera, open redirect, wyciek wrażliwych danych przez API, logika biznesowa |
 | 🟢 **Niski** | Drobne wycieki informacji, brakujące nagłówki z realnym wpływem, błędy walidacji |
 
-Ostateczny poziom ustala organizator. Decyzja jest wiążąca.
-
 ---
 
 ## Zasady ogólne
 
 - Program trwa od **31 marca** do **20 kwietnia 2026**
-- Testy tylko na środowisku staging — produkcja jest zakazana
-- Nie wolno uzyskiwać dostępu do danych innych użytkowników stagingu
-- Nie wolno niszczyć danych ani zakłócać działania serwisu
-- Każdy badacz może mieć maksymalnie **jedno miejsce per tier** (pierwsze zgłoszenie)
-- Podatności znalezione po zamknięciu programu nie kwalifikują się do nagród
-- Organizator zastrzega prawo do odrzucenia zgłoszeń naruszających zasady
+- Testy tylko na środowisku staging, please
+- Nie wolno niszczyć danych ani zakłócać działania serwisu produkcyjnego
+- Postaram się publikować listę zgłoszonych rzeczy jak tylko będę je łatać
 
 ---
 
 ## Przekazanie nagrody
 
-Po zakończeniu programu kontaktuję się z każdym zakwalifikowanym badaczem przez GitHub. Badacz wskazuje organizację non-profit (NGO) według własnego wyboru — organizator przekazuje środki bezpośrednio na jej konto.
+Po zakończeniu programu kontaktuję się z każdym autorem przez GitHub, wskazujecie organizację non-profit (NGO) według własnego wyboru — a ja przekazuje środki bezpośrednio na jej konto.
 
-Niezagospodarowane pule (poziomy bez zakwalifikowanych zgłoszeń) trafiają na [Fundację Daj Herbatę](https://www.dajherbate.pl).
+Niezagospodarowane pule, do wysokości sumy nagród 2000zł, trafiają na [Fundację Daj Herbatę](https://www.dajherbate.pl).
 
 ---
 
 ## O projekcie
 
-[twojakategoria.pl](https://www.twojakategoria.pl) to polski portal edukacyjny pomagający mężczyznom w legalnej zmianie kategorii wojskowej z powodu pogorszenia stanu zdrowia. Aplikacja generuje dokumenty po stronie klienta (dane medyczne nigdy nie opuszczają przeglądarki), obsługuje płatności przez PayNow/mBank i działa zgodnie z RODO.
+[twojakategoria.pl](https://www.twojakategoria.pl) to portal edukacyjny pomagający mężczyznom w legalnej zmianie kategorii wojskowej z powodu pogorszenia stanu zdrowia. Aplikacja generuje dokumenty po stronie klienta (dane medyczne nigdy nie opuszczają przeglądarki), obsługuje płatności przez PayNow/mBank i działa zgodnie z RODO.
 
 Zbudowana w całości przy użyciu AI (Next.js 14, TypeScript, Tailwind CSS). Kod źródłowy pozostaje prywatny.
 
