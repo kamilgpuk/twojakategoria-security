@@ -1,6 +1,7 @@
 # Vibe Coding → Bug Bounty → Kasa dla NGO
 
-> Program Bug Bounty dla [twojakategoria.pl](https://www.twojakategoria.pl) — portalu edukacyjnego który zbudowałem w całości przez AI (vibe coding). Pula nagród: **2 000 zł przekazane na NGO**.
+> Program Bug Bounty dla [twojakategoria.pl](https://www.twojakategoria.pl) — portalu edukacyjnego który zbudowałem w całości przez AI (vibe coding).
+> Pula nagród: **2 000 zł przekazane na NGO**.
 
 Zbudowałem tę aplikację razem z AI, nie będąc programistą. Z jednej strony bardzo uskrzydlające doświadczenie - z drugiej, mając za sobą 10 lat w IT wiem, że nic nie wiem. Apka obsługuje realne dane użytkowników, ma podpięte płatności - jestem ciekaw, jakig bugów i podatności nie znalazły dotychczas agenty. W ramach ciekawości, oraz w duchu *giving back*, stawiam kasę za jej złamanie — a nagrodą jest wskazanie organizacji non-profit, na którą trafi Twoja część puli.
 
