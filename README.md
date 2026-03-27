@@ -1,8 +1,8 @@
-# AI pisało, Ty łamiesz
+# Vibe Coding → Bug Bounty → Kasa dla NGO
 
-> Program Bug Bounty dla [twojakategoria.pl](https://www.twojakategoria.pl) — polskiego portalu edukacyjnego zbudowanego w całości przez AI (vibe coding). Pula nagród: **2 000 zł**.
+> Program Bug Bounty dla [twojakategoria.pl](https://www.twojakategoria.pl) — polskiego portalu edukacyjnego zbudowanego w całości przez AI (vibe coding). Pula nagród: **2 000 zł przekazane na NGO**.
 
-Zbudowałem tę aplikację razem z AI. Obsługuje realne dane użytkowników i płatności. Teraz płacę Ci za jej złamanie.
+Zbudowałem tę aplikację razem z AI. Obsługuje realne dane użytkowników i płatności. Teraz płacę Ci za jej złamanie — a nagrodą jest wskazanie organizacji non-profit, na którą trafi Twoja część puli.
 
 ---
 
@@ -19,7 +19,7 @@ Produkcja (`twojakategoria.pl`) jest poza zakresem. Testy na produkcji = dyskwal
 
 ## Pule nagród
 
-Po zakończeniu programu (30 dni) pula każdego poziomu dzielona jest **równo** między wszystkich zakwalifikowanych badaczy w danym tierze.
+Po zakończeniu programu pula każdego poziomu dzielona jest **równo** między wszystkich zakwalifikowanych badaczy w danym tierze. Każdy zakwalifikowany badacz **wskazuje NGO**, na które trafi jego część — organizator przekazuje środki bezpośrednio.
 
 | Poziom | Pula | Maks. osób | Zasada |
 |--------|------|------------|--------|
@@ -28,9 +28,9 @@ Po zakończeniu programu (30 dni) pula każdego poziomu dzielona jest **równo**
 | 🟡 Średni | 300 zł | 5 | first come, first served |
 | 🟢 Niski | 200 zł | 5 | first come, first served |
 
-**Przykład:** 4 osoby zgłoszą krytyczne bugi → każda dostaje 250 zł.
+**Przykład:** 4 osoby zgłoszą krytyczne bugi → każda wskazuje NGO, na które trafi 250 zł.
 
-**Niezagospodarowane pule** (np. nikt nie znajdzie krytycznego buga) przekazuję w całości na [Fundacja Daj Herbatę](https://www.dajherbate.pl).
+**Niezagospodarowane pule** (np. nikt nie znajdzie krytycznego buga) trafiają w całości na [Fundację Daj Herbatę](https://www.dajherbate.pl).
 
 **Duplikaty:** jeśli dwie osoby zgłoszą ten sam bug, liczy się tylko pierwsze zgłoszenie.
 
@@ -121,7 +121,7 @@ Ostateczny poziom ustala organizator. Decyzja jest wiążąca.
 
 ## Zasady ogólne
 
-- Program trwa od **31 marca** do **30 kwietnia 2026**
+- Program trwa od **31 marca** do **20 kwietnia 2026**
 - Testy tylko na środowisku staging — produkcja jest zakazana
 - Nie wolno uzyskiwać dostępu do danych innych użytkowników stagingu
 - Nie wolno niszczyć danych ani zakłócać działania serwisu
@@ -131,13 +131,11 @@ Ostateczny poziom ustala organizator. Decyzja jest wiążąca.
 
 ---
 
-## Wypłata
+## Przekazanie nagrody
 
-Po zakończeniu programu (podsumowanie wyników) kontaktuję się z każdym zakwalifikowanym badaczem przez GitHub.
+Po zakończeniu programu kontaktuję się z każdym zakwalifikowanym badaczem przez GitHub. Badacz wskazuje organizację non-profit (NGO) według własnego wyboru — organizator przekazuje środki bezpośrednio na jej konto.
 
-Wypłata do wyboru:
-- **BLIK** — po wymianie wiadomości prywatnych
-- **Przelew na konto wskazanej organizacji non-profit** (NGO)
+Niezagospodarowane pule (poziomy bez zakwalifikowanych zgłoszeń) trafiają na [Fundację Daj Herbatę](https://www.dajherbate.pl).
 
 ---
 
